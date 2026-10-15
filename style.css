@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6; /* AQUI */
+}
+
+header {
+    background-color: #1a2b4c;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* AQUI */
+    gap: 10px;  /* AQUI */
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;  /* AQUI */
+    border-radius: 4px; /* AQUI */
+    display: block;     /* AQUI */
+    transition: background-color 0.3s;  /* AQUI */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #2c4373;
+}
+
+.card {
+    background-color: #ffffff;                  /* AQUI */
+    border: 1px solid #cccccc;                  /* AQUI */
+    padding: 25px;                                  /* AQUI */
+    margin-bottom: 20px;                            /* AQUI */
+    border-radius: 6px;                             /* AQUI */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);  /* AQUI */
+}
+
+.flex-container {
+    display: flex;
+    gap: 15px;              /* AQUI */
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flex-box {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*.card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}*/
+.form-container {
+    max-width: 600px;        /* AQUI */
+    margin: 0 auto;         /* AQUI */
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;     /* AQUI */
+    font-weight: bold;
+    color: #1a2b4c;     /* AQUI */
+    font-size: 14px;        /* AQUI */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;             /* AQUI */
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;                /* AQUI */
+    font-family: inherit;           /* AQUI */
+    background-color: #fafafa;  /* AQUI */
+    transition: border-color 0.3s, background-color 0.3s, box-shadow 0.3s; /* AQUI */
+}
+
+/* Efeito de Foco nos Campos */
+.form-group input:focus,                            /* AQUI */
+.form-group select:focus,                           /* AQUI */
+.form-group textarea:focus {                        /* AQUI */
+    outline: none;                                  /* AQUI */
+    border-color: #1a2b4c;                      /* AQUI */
+    background-color: #ffffff;                  /* AQUI */
+    box-shadow: 0 0 5px rgba(26, 43, 76, 0.3);  /* AQUI */
+}
+
+.btn {
+    background-color: #1a2b4c;
+    color: #ffffff;
+    padding: 12px 20px;     /* AQUI */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;  /* AQUI */
+}
+
+.btn:hover {
+    background-color: #2c4373;
+}
+
+.btn-full {                         /* AQUI */
+    background-color: #2c4373;      /* AQUI */
+}                                   /* AQUI */
+
+.table-responsive {     /* AQUI */
+    overflow-x: auto;   /* AQUI */
+}                       /* AQUI */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a2b4c;
+    color: #ffffff;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+tfoot td {
+    background-color: #e9ecef;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #cccccc;
+    font-size: 14px;
+    color: #666666;
+}
+
+                /*   TUDO A PARTIR DAQUI */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    /* Menu de navegação empilhado no celular */
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Flexbox passa de linha horizontal para coluna vertical */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-box {
+        margin-bottom: 10px;
+    }
+
+    /* Formulário ocupa largura total com espaçamento adequado */
+    .card {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+
+/* ADICIONAIS PARA VISUALIZAÇÃO EM SMARTPHONES */
+.menu-btn {
+    display: none;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.menu-btn:hover {
+    background-color: #2c4373;
+}
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}

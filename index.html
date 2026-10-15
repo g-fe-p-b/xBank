@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>XBank Invest - Banco de Investimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <img src="logo.png" alt="Logo do XBank Invest" style="width: 150px; height: auto; margin-right: 20px;">
+            <h1>XBank Invest - Plataforma Financeira</h1>
+            <!--Botão ativador de menu mobile-->
+            <button class="menu-btn" onclick="alternarMenu()">☰</button>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="forms.html">Abertura de Conta</a></li>
+                <li><a href="tabela.html">Produtos Financeiros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Bem-vindo ao Xbank Invest</h2>
+            <p>Sua fintech de soluções financeiras e mercado de capitais.</p>
+        </div>
+
+        <div class="flex-container">
+            <div class="flex-box">
+                <h3>Perfil de Investidor</h3>
+                <p>Preencha nosso formulário para descobrir quais ativos combinam com suas metas.</p>
+                <br>
+                <a href="forms.html" class="btn">Ir para Formulário</a>
+            </div>
+
+            <div class="flex-box">
+                <h3>Carteira de Produtos</h3>
+                <p>Consulte nossa tabela de ativos financeiros com opções em Renda Fixa, FIIs e Ações.</p>
+                <br>
+                <a href="tabela.html" class="btn">Ver Tabela de Investimentos</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2026 XBank Invest Banco de Investimentos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

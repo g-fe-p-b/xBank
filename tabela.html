@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Financeiros - XBank Invest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+            <img src="logo.png" alt="Logo do XBank Invest" style="width: 150px; height: auto; margin-right: 20px;">
+            <h1>XBank Invest - Plataforma Financeira</h1>
+            <!--Botão ativador de menu mobile-->
+            <button class="menu-btn" onclick="alternarMenu()">☰</button>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="forms.html">Abertura de Conta</a></li>
+                <li><a href="tabela.html" class="active">Produtos Financeiros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Tabela de Produtos Financeiros</h2>
+            <p>Consulte abaixo as opções disponíveis para aplicação no banco de investimentos:</p>
+
+            <div class="table-responsive">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Classe de Ativo</th>
+                            <th>Descrição do Produto</th>
+                            <th>Página de Acesso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fundos Imobiliários (FIIs)</td>
+                            <td>Investimento focado em galpões logísticos e shopping centers.</td>
+                            <td><a href="forms.html" class="btn">Acessar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Fundos de Investimento</td>
+                            <td>Gestão multimercado com estratégias diversificadas.</td>
+                            <td><a href="forms.html" class="btn">Acessar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Renda Fixa</td>
+                            <td>Títulos públicos e CDBs com garantia do FGC.</td>
+                            <td><a href="forms.html" class="btn">Acessar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mercado de Ações</td>
+                            <td>Ações de grandes empresas brasileiras (Blue Chips).</td>
+                            <td><a href="forms.html" class="btn">Acessar</a></td>
+                        </tr>
+                        <tr>
+                            <td>Criptomoedas</td>
+                            <td>Ativos digitais com alta volatilidade e potencial de retorno.</td>
+                            <td><a href="forms.html" class="btn">Acessar</a></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Rentabilidade passada não garante resultados futuros.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2026 XBank Invest Banco de Investimentos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
